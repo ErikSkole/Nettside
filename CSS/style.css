@@ -196,7 +196,7 @@ button:hover {
 
 
 
-/* Hvordan høyretekst skal se ut på hjem-siden */
+/* Hvordan høyretekst skal se ut */
 
 .pig_høyre {
     display: flex;
@@ -296,7 +296,7 @@ button:hover {
 
 
 
-/* Hover for alle tre bildene på den hjem-siden */
+/* Hover for alle tre bildene */
 
 .pig_høyre_bilde:hover, .pig_venstre_bilde:hover {
     opacity: 0.7;
@@ -304,7 +304,7 @@ button:hover {
 
 
 
-/* Hvordan tekst på venstre skal se ut på hjem-siden */
+/* Hvordan tekst på venstre skal se ut  */
 
 .pig_venstre {
     display: flex;
