@@ -1,0 +1,388 @@
+/* All CSS kode som er generelt for alle dokumenter og det som går på body */
+
+body {
+    background-color: #D2D7DF;
+}
+
+
+
+/* Overskriften på nettsiden */
+
+.Overskrift_hovedside {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.vestland_icon {
+    object-fit: cover;
+    padding: 10px;
+}
+
+.overskrift {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.overskrift:hover {
+    color: rgb(96, 96, 96);
+}
+
+.Overskrift {
+    display: flex;
+    padding: 5px;
+    margin-top: 0.625rem;
+    font-size: 4.25rem;
+    margin-right: 50px;
+}
+
+.strek {
+    position: absolute;
+    width: 1000px;
+    height: 0px;
+    margin-right: 1rem;
+    top: 129px;
+    border: 1px solid #000000;
+}
+
+
+
+/* Utseendet på hjem-hjørnet */
+
+.home_corner {
+    display: flex;
+    position: absolute;
+    width: 1281px;
+    height: 847px;
+    left: -65rem;
+    top: -475.01px;
+
+    background: #005283;
+    box-shadow: 0px 4px 8px 12px rgba(0, 0, 0, 0.42);
+    transform: rotate(150.2deg);
+    position: fixed;
+    z-index: 1;
+}
+
+.home_button {
+    display: flex;
+    position: absolute;
+    transform: rotate(-150.2deg);
+    left: 17.2rem;
+    top: 5.45rem;
+}
+
+button {
+    background-image: url(../bilder/Menu_icon.png);
+    background-size: 100%;
+    background-color: #005283;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 50px;
+    padding-bottom: 0;
+    padding-left: 0;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    opacity: 0.4;
+}
+
+/* Her er linkene til hjem-hjørnet og hvordan de skal plasseres */
+
+.links_div {
+    visibility: hidden;
+    position: absolute;
+    left: 6rem;
+    padding-bottom: 15rem;
+    padding-right: 35rem;
+    transition: all 0.3s ease 0s;
+}
+
+.lnkdv {
+    visibility: unset;
+    transition: all 0.3s ease 0s;
+}
+
+#lnk1 {
+    left: 4rem;
+    transition: all 0.3s ease 0s;
+}
+
+#lnk2 {
+    left: 27rem;
+    transition: all 0.7s ease 0s;
+}
+
+#lnk3 {
+    left: 16rem;
+    transition: all 0.5s ease 0s;
+}
+
+#lnk4 {
+    left: 4rem;
+    top: 5rem;
+    transition: all 0.5s ease 0s;
+}
+
+#lnk5 {
+    left: 4rem;
+    top: 10rem;
+    transition: all 0.7s ease 0s;
+}
+
+#lnk6 {
+    left: 4rem;
+    top: 15rem;
+    transition: all 1.1s ease 0s;
+}
+
+#lnk7 {
+    left: 16rem;
+    top: 5rem;
+    transition: all 0.7s ease 0s;
+}
+
+.links {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+/* Animasjoner og transitions til hjem-hjørnet */
+
+.link_appearance {
+    visibility: unset;
+    opacity: 1;
+}
+
+.homeanim {
+    animation: homeanim 0.5s ease 0s forwards;
+}
+
+.homebtnanim {
+    animation: homebtnanim 0.5s ease 0s forwards;
+}
+
+@keyframes homeanim {
+    from {
+
+    } 
+
+    to{
+        left: -20rem;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes homebtnanim {
+    from {
+
+    } 
+
+    to{
+        left: 56.2rem;
+        top: 27.8rem;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+/* Hvordan høyretekst skal se ut på hjem-siden */
+
+.pig_høyre {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15rem;
+}
+
+.overogstrek {
+    justify-content: flex-end;
+}
+
+.pig_høyre_overskrift {
+    display: flex;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    margin-left: 3rem;
+    font-size: 56px;
+    width: fit-content;
+}
+
+.pig_høyre_bilde {
+    margin-left: 12rem;
+    transition:  all 0.3s ease 0s;
+}
+
+.strek1 {
+    position: absolute;
+    width: 352px;
+    height: 0px;
+    
+    right: 15rem;
+
+    border: 1px solid #000000;
+}
+
+.polygon_1 {
+    position: absolute;
+    width: 275px;
+    height: 132px;
+    left: 36rem;
+    
+
+    background: #D2D7DF;
+    opacity: 0.6;
+    transform: rotate(-155deg);
+}
+
+.pig_høyre_tekst {
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    max-width: 20rem;
+    font-size: 28px;
+    text-align: center;
+}
+
+#tekst1 {
+    margin-right: 14.5rem;
+}
+
+#over1 {
+    margin-left: 5.5rem;
+    
+}
+
+#over3 {
+    margin-left: 4.1rem;
+    margin-top: 6rem;
+}
+
+#overannet{
+    margin-left: 6rem;
+    margin-top: 6rem;
+}
+
+#tekst3 {
+    margin-right: 15rem;
+}
+
+#strek_1 {
+    top: 34rem;
+}
+
+#poly_1 {
+    top: 21.7rem;
+}
+
+#strek_3 {
+    position: absolute;
+    top: 118.5rem;
+}
+
+#poly_3 {
+    position: absolute;
+    top: 103.5rem;
+}
+
+
+
+/* Hover for alle tre bildene på den hjem-siden */
+
+.pig_høyre_bilde:hover, .pig_venstre_bilde:hover {
+    opacity: 0.7;
+}
+
+
+
+/* Hvordan tekst på venstre skal se ut på hjem-siden */
+
+.pig_venstre {
+    display: flex;
+    margin-top: 15rem;
+    justify-content: space-between;
+}
+
+.pig_venstre_overskrift {
+    display: flex;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    font-size: 56px;
+    width: fit-content;
+}
+
+
+.pig_venstre_bilde {
+    margin-right: 12rem;
+    transition: all 0.3s ease 0s;
+}
+
+.strek2 {
+    position: absolute;
+    width: 352px;
+    height: 0px;
+    left: 14.5rem;
+    top: 75rem;
+
+    border: 1px solid #000000;
+}
+
+.polygon_2 {
+    position: absolute;
+    width: 275px;
+    height: 132px;
+    left: 51rem;
+    
+
+    background: #D2D7DF;
+    opacity: 0.6;
+    transform: rotate(155deg);
+}
+
+#over2 {
+    margin-left: 17rem;
+}
+
+#overbilder {
+    margin-left: 20.5rem;
+}
+
+#tekst2 {
+    margin-left: 14.5rem;
+}
+
+#poly_2 {
+    top: 62.7rem; 
+}
+
+#poly_annet {
+    top: 103.5rem;
+}
+
+
+
+/* Bottom */
+
+.bottom {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 800px solid transparent;
+    border-top: 0;
+    border-bottom: 3000px solid #005283;
+    left: -13rem;
+    top: 65rem;
+    z-index: -1;
+    
+    transform: rotate(-90deg);
+}

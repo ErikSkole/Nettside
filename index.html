@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amalie skram Hjemmeside</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="Overskrift_hovedside">
+        <p class="Overskrift">
+            <a class="overskrift" href="index.html">Amalie Skram VGS</a>
+            <img class="vestland_icon" src="bilder/Vestland.png" alt="vestland">
+        </p>
+        <div class="strek"></div>
+        <div id="Corner" class="home_corner">
+            <div id="hbtn" class="home_button">
+                <button id="btn" class="home"></button>
+                <div id="lnk_dv" class="links_div">
+                    <a href="html/prosjekter.html" class="links" id="lnk1">Prosjekter</a>
+                    <a href="html/om_meg.html" class="links" id="lnk2">Om meg</a>
+                    <a href="html/om_skolen.html" class="links" id="lnk3">Om skolen</a>
+                    <a href="html/video_innlevering.html" class="links" id="lnk4">Video</a>
+                    <a href="html/bilde_innlevering.html" class="links" id="lnk5">Bilder</a>
+                    <a href="html/annet_innlevering.html" class="links" id="lnk6">Annet</a>
+                    <a href="html/om_im.html" class="links" id="lnk7">Om IM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const corner = document.getElementById("Corner");
+        const homebutton = document.getElementById("btn");
+        const button = document.getElementById("hbtn");
+        const lnkdv = document.getElementById("lnk_dv");
+        const link1 = document.getElementById("lnk1");
+        const link2 = document.getElementById("lnk2");
+        const link3 = document.getElementById("lnk3");
+        const link4 = document.getElementById("lnk4");
+        const link5 = document.getElementById("lnk5");
+        const link6 = document.getElementById("lnk6");
+        const link7 = document.getElementById("lnk7");
+
+        homebutton.addEventListener("click", () => {
+        corner.classList.toggle("homeanim"), button.classList.toggle("homebtnanim"), link1.classList.toggle("link_appearance"), link2.classList.toggle("link_appearance"), link3.classList.toggle("link_appearance"), link4.classList.toggle("link_appearance"), link5.classList.toggle("link_appearance"), link6.classList.toggle("link_appearance"), link7.classList.toggle("link_appearance");
+        });
+
+        homebutton.addEventListener("click", () => {
+            lnkdv.classList.toggle("lnkdv");
+        });
+    </script>
+
+    <div class="pig_høyre">
+        <a href="HTML/prosjekter.html"><img src="bilder/wahid-khene-iKdQCIiSMlQ-unsplash.jpg" alt="prosjekter_bilde" class="pig_høyre_bilde"></a>
+        <div id="poly_1" class="polygon_1"></div>
+        <div class="overogstrek">
+            <p class="pig_høyre_overskrift">Prosjekter</p>
+            <p id="tekst1" class="pig_høyre_tekst">Her har jeg en oversikt over porsjekter som jeg har laget i skolen. Du kan trykke på bildet for å se dem.</p>
+            <div id="strek_1" class="strek1"></div>
+        </div>
+    </div>
+
+    <div class="pig_venstre">
+        <div class="overogstrek">
+            <p id="over2" class="pig_venstre_overskrift">Om Skolen</p>
+            <p id="tekst2" class="pig_høyre_tekst">Trykker du på dette bildet så vil du finne litt info om skolen og om IM linjen.</p>
+            <div id="strek_2" class="strek2"></div>
+        </div>
+        <a href="HTML/om_skolen.html"><img src="bilder/COL-5-12443.jpeg" alt="ASbilde" class="pig_venstre_bilde"></a>
+        <div id="poly_2" class="polygon_2"></div>
+    </div>
+
+    <div class="pig_høyre">
+        <a href="HTML/om_meg.html"><img src="bilder/IMG_2832.jpeg" alt="MEGbilde" class="pig_høyre_bilde"></a>
+        <div id="poly_3" class="polygon_1"></div>
+        <div class="overogstrek">
+            <p id="over3" class="pig_høyre_overskrift">Om Meg</p>
+            <p id="tekst3" class="pig_høyre_tekst">Du kan trykke på bildet for å få vite litt mer om meg og denne siden som jeg har laget.</p>
+            <div id="strek_3" class="strek1"></div>
+        </div>
+    </div>
+
+    <div class="bottom"></div>
+</body>
+</html>
