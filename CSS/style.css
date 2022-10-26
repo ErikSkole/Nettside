@@ -156,7 +156,7 @@ button:hover {
 
 
 
-/* Animasjoner og transitions til hjem-hjørnet */
+/* Animasjoner og transitions */
 
 .link_appearance {
     visibility: unset;
@@ -194,7 +194,30 @@ button:hover {
     }
 }
 
+.bildecollage {
+    animation: bildecollage 10s ease 0s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes bildecollage {
+    0%      {background-image: url(../bilder/IMG_3658.jpg);}
+    25%     {background-image: url(../bilder/IMG_3666.jpg);}
+    50%     {background-image: url(../bilder/IMG_3679.jpg);}
+    75%     {background-image: url(../bilder/IMG_3682.jpg);}
+    100%    {background-image: url(../bilder/IMG_3658.jpg);}
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.bildecol {
+    display: flex;
+    width: 1000px;
+    height: 667px;
+    margin: 5rem;
+}
 
 /* Hvordan høyretekst skal se ut */
 
