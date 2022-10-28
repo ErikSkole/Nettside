@@ -40,6 +40,7 @@ body {
 
 .strek {
     position: absolute;
+    z-index: -1;
     width: 1000px;
     height: 0px;
     margin-right: 1rem;
@@ -258,11 +259,10 @@ button:hover {
 
 .strek1 {
     position: absolute;
+    z-index: -1;
     width: 352px;
     height: 0px;
-    
     right: 15rem;
-
     border: 1px solid #000000;
 }
 
@@ -366,7 +366,7 @@ button:hover {
     height: 0px;
     left: 14.5rem;
     top: 75rem;
-
+    z-index: -1;
     border: 1px solid #000000;
 }
 
@@ -483,4 +483,62 @@ button:hover {
     padding: 1rem;
     background-color: bisque;
     border-radius: 12.3px;
+}
+
+
+
+/* Her er koden for Om Meg siden */
+
+.meg_info {
+    display: flex;
+    justify-content: center;
+}
+
+.meg_boks {
+    display: flex;
+    background-image: url(../bilder/meg.jpeg);
+    background-size: cover;
+    margin: 1.5rem;
+    width: 1000px;
+    height: 1333px;
+}
+
+.tekstboks {
+    display: flex;
+    padding: 1.5rem;
+    background-color: #2584bb;
+    border-radius: 25px;
+    height: fit-content;
+    max-width: 250px;
+    width: fit-content;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#tekstboks1 {
+    position: absolute;
+    position: relative;
+    top: 14rem;
+    left: 2rem;
+}
+
+#tekstboks2 {
+    position: absolute;
+    position: relative;
+    top: 8rem;
+    left: 7rem;
+}
+
+#tekstboks3 {
+    position: absolute;
+    position: relative;
+    top: 18rem;
+    left: 10rem;
+}
+
+#tekstboks4 {
+    position: absolute;
+    position: relative;
+    top: 32rem;
+    left: -44rem;
 }
