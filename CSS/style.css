@@ -415,7 +415,7 @@ button:hover {
     border-top: 0;
     border-bottom: 3000px solid #005283;
     left: -13rem;
-    top: 65rem;
+    margin-top: -71rem;
     z-index: -1;
     
     transform: rotate(-90deg);
@@ -468,7 +468,7 @@ button:hover {
     font-weight: bolder;
     font-size: 36px;
     height: fit-content;
-    margin-top: 25.7rem;
+    margin-top: 21.5rem;
     margin-right: 1.5rem;
     text-align: end;
 }
