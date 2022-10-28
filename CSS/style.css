@@ -406,7 +406,7 @@ button:hover {
 
 /* Bottom */
 
-.bottom {
+.bottom_blue {
     position: absolute;
     width: 0;
     height: 0;
@@ -419,6 +419,58 @@ button:hover {
     z-index: -1;
     
     transform: rotate(-90deg);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bilder_venstre {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-top: 31.7rem;
+    width: fit-content;
+}
+
+.vs_og_ps {
+    padding-bottom: 10px;
+}
+
+.figma_og_hcj {
+    padding-top: 10px;
+}
+
+#vs {
+    padding-right: 10px;
+}
+
+#ps {
+    padding-left: 10px;
+}
+
+#fig {
+    padding-right: 10px;
+}
+
+#hcj {
+    padding-left: 10px;
+}
+
+.tekst_høyre_bottom {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    color: #acb4f5;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 36px;
+    height: fit-content;
+    margin-top: 25.7rem;
+    margin-right: 1.5rem;
+    text-align: end;
 }
 
 
