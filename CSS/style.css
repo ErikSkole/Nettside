@@ -176,7 +176,7 @@ button:hover {
 
     } 
 
-    to{
+    to {
         left: -20rem;
         animation-fill-mode: forwards;
     }
@@ -187,7 +187,7 @@ button:hover {
 
     } 
 
-    to{
+    to {
         left: 56.2rem;
         top: 27.8rem;
         animation-fill-mode: forwards;
@@ -209,14 +209,25 @@ button:hover {
 
 .col {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bildecol_header {
+    display: flex;
+    width: fit-content;
+    font-size: 36px;
+    margin-top: 5rem;
 }
 
 .bildecol {
     display: flex;
     width: 1000px;
     height: 667px;
-    margin: 5rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 4rem;
 }
 
 /* Hvordan høyretekst skal se ut */
@@ -408,4 +419,16 @@ button:hover {
     z-index: -1;
     
     transform: rotate(-90deg);
+}
+
+
+
+/* Info på de sidene der jeg ikke har noe enda */
+
+.info {
+    display: flex;
+    margin: 5rem;
+    padding: 1rem;
+    background-color: bisque;
+    border-radius: 25px;
 }
