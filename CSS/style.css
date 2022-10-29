@@ -231,6 +231,10 @@ button:hover {
     margin-bottom: 4rem;
 }
 
+
+
+
+
 /* Hvordan høyretekst skal se ut */
 
 .pig_høyre {
@@ -328,6 +332,25 @@ button:hover {
     top: 103.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+    
+    #tekst1 {
+        margin-right: 0rem;
+    }
+
+    #bilde1 {
+        order: 2;
+    }
+
+    #overogstrek1 {
+        order: 1;
+    }
+    
+    #tekst3 {
+        margin-right: 0rem;
+    }
+}
+
 
 
 /* Hover for alle tre bildene */
@@ -402,6 +425,15 @@ button:hover {
     top: 103.5rem;
 }
 
+/* responsive dritt */
+
+@media only screen and (max-width: 600px) {
+
+    #tekst2 {
+        margin-left: 0rem;
+    }
+}
+
 
 
 /* Bottom */
@@ -471,6 +503,23 @@ button:hover {
     margin-top: 21.5rem;
     margin-right: 1.5rem;
     text-align: end;
+}
+
+@media only screen and (max-width: 600px) {
+    .bottom_blue {
+        left: -65rem;
+        
+    }
+    
+    .pig_venstre {
+        flex-direction: column;
+    }
+
+    .pig_høyre {
+        flex-direction: column;
+    }
+
+    
 }
 
 
