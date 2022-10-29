@@ -591,3 +591,70 @@ button:hover {
     top: 32rem;
     left: -44rem;
 }
+
+
+
+/* her er koden for Om IM siden */
+
+.om_im {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    background-image: url(../bilder/Im_linjen.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+.tekstboks_im {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    max-width: 500px;
+    padding: 30px;
+    background-color: rgba(240, 240, 240, 0.7);
+    border-radius: 25px;
+}
+
+.im_tekst {
+    margin: 0;
+    font-size: 26px;
+}
+
+#im_boks1 { 
+    margin: 2rem;
+    margin-top: 6rem;
+    margin-left: 11rem;
+}
+
+#im_boks2 {
+    margin: 2rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+
+
+
+/* Her er koden for Om Skolen siden */
+
+.om_skolen {
+    display: flex;
+    background-image: url(../bilder/Skolen.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+#omskole1 {
+    margin: 2rem;
+    margin-top: 7rem;
+    margin-left: 8rem;
+}
+
+#omskole2 {
+    margin: 2rem;
+    margin-top: 7rem;
+    margin-left: 15rem;
+}
