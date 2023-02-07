@@ -155,9 +155,19 @@ button:hover {
     opacity: 0;
 }
 
+.links:hover {
+    opacity: 0.4;
+}
+
 
 
 /* Animasjoner og transitions */
+
+body.preload *{
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
 
 .link_appearance {
     visibility: unset;
@@ -170,6 +180,14 @@ button:hover {
 
 .homebtnanim {
     animation: homebtnanim 0.5s ease 0s forwards;
+}
+
+.homeanim2 {
+    animation: homeanim2 0.5s ease 0s forwards;
+}
+
+.homebtnanim2 {
+    animation: homebtnanim2 0.5s ease 0s forwards;
 }
 
 @keyframes homeanim {
@@ -191,6 +209,30 @@ button:hover {
     to {
         left: 56.2rem;
         top: 27.8rem;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes homeanim2 {
+    from {
+        left: -20rem;
+    } 
+
+    to {
+        left: -65rem;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes homebtnanim2 {
+    from {
+        left: 56.2rem;
+        top: 27.8rem;
+    } 
+
+    to {
+        left: 17.2rem;
+        top: 5.45rem;
         animation-fill-mode: forwards;
     }
 }

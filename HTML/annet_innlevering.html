@@ -7,19 +7,19 @@
     <title>Annet Innlevering</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
+<body class="preload">
     <div class="Overskrift_hovedside">
         <p class="Overskrift">
             <a class="overskrift" href="../index.html">Amalie Skram VGS</a>
             <img class="vestland_icon" src="../bilder/Vestland.png" alt="vestland">
         </p>
         <div class="strek"></div>
-        <div id="Corner" class="home_corner">
-            <div id="hbtn" class="home_button">
+        <div id="Corner" class="home_corner homeanim2">
+            <div id="hbtn" class="home_button homebtnanim2">
                 <button id="btn" class="home"></button>
                 <div id="lnk_dv" class="links_div">
-                    <a href="prosjekter.html" class="links" id="lnk1">Prosjekter</a>
                     <a href="om_meg.html" class="links" id="lnk2">Om meg</a>
+                    <a href="prosjekter.html" class="links" id="lnk1">Prosjekter</a>
                     <a href="om_skolen.html" class="links" id="lnk3">Om skolen</a>
                     <a href="video_innlevering.html" class="links" id="lnk4">Video</a>
                     <a href="bilde_innlevering.html" class="links" id="lnk5">Bilder</a>
@@ -30,27 +30,7 @@
         </div>
     </div>
 
-    <script>
-        const corner = document.getElementById("Corner");
-        const homebutton = document.getElementById("btn");
-        const button = document.getElementById("hbtn");
-        const lnkdv = document.getElementById("lnk_dv");
-        const link1 = document.getElementById("lnk1");
-        const link2 = document.getElementById("lnk2");
-        const link3 = document.getElementById("lnk3");
-        const link4 = document.getElementById("lnk4");
-        const link5 = document.getElementById("lnk5");
-        const link6 = document.getElementById("lnk6");
-        const link7 = document.getElementById("lnk7");
-
-        homebutton.addEventListener("click", () => {
-        corner.classList.toggle("homeanim"), button.classList.toggle("homebtnanim"), link1.classList.toggle("link_appearance"), link2.classList.toggle("link_appearance"), link3.classList.toggle("link_appearance"), link4.classList.toggle("link_appearance"), link5.classList.toggle("link_appearance"), link6.classList.toggle("link_appearance"), link7.classList.toggle("link_appearance");
-        });
-
-        homebutton.addEventListener("click", () => {
-            lnkdv.classList.toggle("lnkdv");
-        });
-    </script>
+    <script src="../Javascript/button.js"></script>
 
     <div class="info">Oj! Her var det visst ikke noe enda, men jeg kommer til å legge inn prosjekter som blir levert på andre måter enn bilder og videoer. Eventuelle dokumenter eller lignende.</div>
 
