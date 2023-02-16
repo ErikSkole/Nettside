@@ -7,7 +7,7 @@
     <title>Prosjekter</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body class="preload">
+<body class="preload" onload="startTime()">
     <div class="Overskrift_hovedside">
         <p class="Overskrift">
             <a class="overskrift" href="../index.html">Amalie Skram VGS</a>
@@ -29,49 +29,34 @@
             </div>
         </div>
     </div>
+    <div class="header_klokke">
+        <div class="Klokke">
+            <p id="klokke"></p>
+        </div>
+    </div>
+    <div class="prosjekter">
+        <div class="kalkulator">
+            <p class="output_field" id="output"></p>
+                <form class="kalk" id="kalk">
+                    <input class="input" type="number" id="x"><br>
+                    <select class="input" name="op" id="operator">
+                        <option value="a">+</option>
+                        <option value="b">-</option>
+                        <option value="c">*</option>
+                        <option value="d">/</option>
+                    </select><br>
+                    <input class="input" type="number" id="y"><br>
+                    <input class="input" type="submit" value="submit">
+                </form>
+                
+        </div>
+    </div>
+    
+    
 
     <script src="../Javascript/button.js"></script>
-    <script src="../Javascript/algoritme.js"></script>
-
-    <div class="avsnitt_høyre">
-        <a href="video_innlevering.html"><img src="../bilder/project2.jpeg" alt="prosjekter_bilde" class="avsnitt_høyre_bilde"></a>
-        <div id="poly_1" class="polygon_1"></div>
-        <div class="overogstrek">
-            <p id="over1" class="avsnitt_høyre_overskrift">Video</p>
-            <p id="tekst1" class="avsnitt_høyre_tekst">Her kommer jeg til å legge inn alle videoprosjekter som jeg gjør i løpet av skoleåret!</p>
-            <div id="strek_1" class="strek1"></div>
-        </div>
-    </div>
-
-    <div class="avsnitt_venstre">
-        <div class="overogstrek">
-            <p id="overbilder" class="avsnitt_venstre_overskrift">Bilder</p>
-            <p id="tekst2" class="avsnitt_høyre_tekst">Her kommer jeg til å publisere alle bildeprosjekter som jeg kommer til å gjøre gjennom skoleåret!</p>
-            <div id="strek_2" class="strek2"></div>
-        </div>
-        <a href="bilde_innlevering.html"><img src="../bilder/bilde.jpeg" alt="ASbilde" class="avsnitt_venstre_bilde"></a>
-        <div id="poly_2" class="polygon_2"></div>
-    </div>
-
-    <div class="avsnitt_høyre">
-        <a href="annet_innlevering.html"><img src="../bilder/annet.jpeg" alt="MEGbilde" class="avsnitt_høyre_bilde"></a>
-        <div id="poly_annet" class="polygon_1"></div>
-        <div class="overogstrek">
-            <p id="overannet" class="avsnitt_høyre_overskrift">Annet</p>
-            <p id="tekst3" class="avsnitt_høyre_tekst">Hvis du går inn her så kan du se alle de andre prosjektene som ikke er bilder eller videoer som jeg leverer gjennom skoleåret!</p>
-            <div id="strek_3" class="strek1"></div>
-        </div>
-    </div>
-
-    <div class="avsnitt_venstre">
-        <div class="overogstrek">
-            <p id="overbilder" class="avsnitt_venstre_overskrift">Programmering</p>
-            <p id="tekst4" class="avsnitt_høyre_tekst">Her legger jeg ved alle prosjekter som jeg gjør innen programmering de neste to årene!</p>
-            <div id="strek_4" class="strek2"></div>
-        </div>
-        <a href="programmering.html"><img src="../bilder/bilde.jpeg" alt="ASbilde" class="avsnitt_venstre_bilde"></a>
-        <div id="poly_4" class="polygon_4"></div>
-    </div>
+    <script src="../Javascript/kalkulator.js"></script>
+    <script src="../Javascript/klokke.js"></script>
 
     <div class="bottom"></div>
     </body>

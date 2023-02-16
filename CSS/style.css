@@ -275,11 +275,64 @@ body.preload *{
 
 
 
+/* Javascript siden */
 
+.header_klokke {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Klokke {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    justify-content: center;
+}
+
+.output_field {
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+    background-color: white;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.prosjekter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.kalkulator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #03659e;
+    border-radius: 25px;
+    order: 1;
+}
+
+.kalk {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    text-align: center;
+}
 
 /* Hvordan høyretekst skal se ut */
 
-.pig_høyre {
+.avsnitt_høyre {
     display: flex;
     justify-content: space-between;
     margin-top: 15rem;
@@ -289,7 +342,7 @@ body.preload *{
     justify-content: flex-end;
 }
 
-.pig_høyre_overskrift {
+.avsnitt_høyre_overskrift {
     display: flex;
     padding-right: 0rem;
     padding-top: 0rem;
@@ -298,7 +351,7 @@ body.preload *{
     width: fit-content;
 }
 
-.pig_høyre_bilde {
+.avsnitt_høyre_bilde {
     margin-left: 12rem;
     transition:  all 0.3s ease 0s;
 }
@@ -324,7 +377,7 @@ body.preload *{
     transform: rotate(-155deg);
 }
 
-.pig_høyre_tekst {
+.avsnitt_høyre_tekst {
     display: flex;
     padding: 0.5rem;
     flex-wrap: wrap;
@@ -376,11 +429,20 @@ body.preload *{
 
 @media only screen and (max-width: 600px) {
     
+    .avsnitt_høyre_tekst {
+        justify-content: center;
+        margin-left: 25rem;
+    }
+
     #tekst1 {
         margin-right: 0rem;
     }
 
     #bilde1 {
+        order: 2;
+    }
+
+    #bilde3 {
         order: 2;
     }
 
@@ -397,7 +459,7 @@ body.preload *{
 
 /* Hover for alle tre bildene */
 
-.pig_høyre_bilde:hover, .pig_venstre_bilde:hover {
+.avsnitt_høyre_bilde:hover, .avsnitt_venstre_bilde:hover {
     opacity: 0.7;
 }
 
@@ -405,13 +467,13 @@ body.preload *{
 
 /* Hvordan tekst på venstre skal se ut  */
 
-.pig_venstre {
+.avsnitt_venstre {
     display: flex;
     margin-top: 15rem;
     justify-content: space-between;
 }
 
-.pig_venstre_overskrift {
+.avsnitt_venstre_overskrift {
     display: flex;
     padding-left: 0rem;
     padding-top: 0rem;
@@ -420,7 +482,7 @@ body.preload *{
 }
 
 
-.pig_venstre_bilde {
+.avsnitt_venstre_bilde {
     margin-right: 12rem;
     transition: all 0.3s ease 0s;
 }
@@ -465,6 +527,10 @@ body.preload *{
 
 #poly_annet {
     top: 103.5rem;
+}
+
+#strek4 {
+    top: 34rem;
 }
 
 /* responsive dritt */
@@ -553,11 +619,11 @@ body.preload *{
         
     }
     
-    .pig_venstre {
+    .avsnitt_venstre {
         flex-direction: column;
     }
 
-    .pig_høyre {
+    .avsnitt_høyre {
         flex-direction: column;
     }
 
