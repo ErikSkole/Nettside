@@ -3,7 +3,6 @@ kalk.addEventListener("submit", (e) => {
     let svar
     let x = document.getElementById("x").value;
     let y = document.getElementById("y").value;
-    let kalk = document.getElementById("kalk");
     
     if (document.getElementById("operator").value == "a") {
         svar = Number(x) + Number(y)
@@ -12,10 +11,10 @@ kalk.addEventListener("submit", (e) => {
         svar = Number(x) - Number(y)
     }
     else if (document.getElementById("operator").value == "c") {
-        svar = x *= y
+        svar = Number(x) * Number(y)
     }
     else if (document.getElementById("operator").value == "d") {
-        svar = x /= y
+        svar = Number(x) / Number(y)
     }
 
     document.getElementById("output").innerHTML = svar
