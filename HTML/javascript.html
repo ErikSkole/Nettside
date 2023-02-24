@@ -48,15 +48,68 @@
                     <input class="input" type="number" id="y"><br>
                     <input class="input" type="submit" value="submit">
                 </form>
-                
+
+        </div>
+        <div class="trePåRad_spill">
+            <h1 class="overskriftSpill">Spill 3 på rad!</h1>
+            <div class="spillAreal">
+                <div class="rad" id="rad1">
+                    <div class="rute" id="rute1" onclick="rute1Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute1-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute1-2">
+                    </div>
+                    <div class="rute" id="rute2" onclick="rute2Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute2-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute2-2">
+                    </div>
+                    <div class="rute" id="rute3" onclick="rute3Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute3-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute3-2">
+                    </div>
+                </div>
+                <div class="rad" id="rad2">
+                    <div class="rute" id="rute4" onclick="rute4Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute4-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute4-2">
+                    </div>
+                    <div class="rute" id="rute5" onclick="rute5Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute5-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute5-2">
+                    </div>
+                    <div class="rute" id="rute6" onclick="rute6Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute6-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute6-2">
+                    </div>
+                </div>
+                <div class="rad" id="rad3">
+                    <div class="rute" id="rute7" onclick="rute7Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute7-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute7-2">
+                    </div>
+                    <div class="rute" id="rute8" onclick="rute8Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute8-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute8-2">
+                    </div>
+                    <div class="rute" id="rute9" onclick="rute9Click()">
+                        <img src="../bilder/kryss.png" alt="kryss" class="hiddenImg" id="bildeRute9-1">
+                        <img src="../bilder/circle.png" alt="kryss" class="hiddenImg" id="bildeRute9-2">
+                    </div>
+                </div>
+            </div>
+            <button type="reset" class="resetSpill" onclick="resetSpill()">Reset spill</button>
         </div>
     </div>
     
-    
-
+    <div class="vinn">
+        <div id="vinn" class="hidden">
+            <h1 id="vinn_tekst">hei</h1>
+            <button class="button_fjern" onclick="fjernBoks()">OK</button>
+        </div>
+    </div>
     <script src="../Javascript/button.js"></script>
     <script src="../Javascript/kalkulator.js"></script>
     <script src="../Javascript/klokke.js"></script>
+    <script src="../Javascript/trePåRad.js"></script>
 
     <div class="bottom"></div>
     </body>
