@@ -7,7 +7,7 @@
     <title>Prosjekter</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body class="preload" onload="startTime()">
+<body class="preload" onload="startTime(); lastInn();">
     <div class="Overskrift_hovedside">
         <p class="Overskrift">
             <a class="overskrift" href="../index.html">Amalie Skram VGS</a>
@@ -99,9 +99,17 @@
             <button type="reset" class="resetSpill" onclick="resetSpill()">Reset spill</button>
         </div>
         <div class="gjoremaal">
-            <h1 class="overskrift_gjoremaal">Her er mine gjøremål framover</h1>
+            <h1 class="overskrift_gjoremaal">Her er mine gjøremål framover:</h1>
             <div class="gjoreList">
                 <p id="gjoreList"></p>
+                <div class="gjoreForm">
+                    <form class="gjoremaalForm" id="formGjore">
+                        <label for="maal">Nytt gjøremål:</label>
+                        <input type="text" name="maal" id="maal">
+                    </form>
+                    <button type="submit" class="submitMaal" onclick="leggtil()">Legg til</button>
+                    <button type="submit" onclick="clearAll()">Clear all</button>
+                </div>
             </div>
         </div>
     </div>
@@ -116,6 +124,7 @@
     <script src="../Javascript/kalkulator.js"></script>
     <script src="../Javascript/klokke.js"></script>
     <script src="../Javascript/trePåRad.js"></script>
+    <script src="../Javascript/gjoremaal.js"></script>
 
     <div class="bottom"></div>
     </body>

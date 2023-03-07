@@ -430,11 +430,22 @@ img {
     order: 3;
 }
 
+#maal {
+    width: 5rem;
+}
+
+.gjoreForm {
+    display: flex;
+    flex-direction: row;
+}
+
 .gjoreList {
     display: flex;
-    width: 15rem;
+    width: 20rem;
     height: auto;
-    border: solid 1px black;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Hvordan høyretekst skal se ut */
