@@ -378,9 +378,6 @@ img {
     display: none;
 }
 
-.resetSpill {
-}
-
 .hidden {
     display: none;
     visibility: hidden;
@@ -423,6 +420,21 @@ img {
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.gjoremaal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+}
+
+.gjoreList {
+    display: flex;
+    width: 15rem;
+    height: auto;
+    border: solid 1px black;
 }
 
 /* Hvordan høyretekst skal se ut */
