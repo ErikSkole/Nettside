@@ -437,14 +437,22 @@ img {
 .gjoreForm {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .gjoreList {
     display: flex;
-    width: 20rem;
+    width: auto;
     height: auto;
     justify-content: center;
     flex-direction: column;
+}
+
+#gjoreList {
+    margin-left: 10rem;
+}
+
+.overskrift_gjoremaal {
     text-align: center;
 }
 

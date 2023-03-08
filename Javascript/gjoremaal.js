@@ -1,6 +1,4 @@
 let history = []
-let idk = true
-let gjoremaal
 let tekst
 let separator = "<br>"
 
@@ -9,9 +7,10 @@ function leggtil() {
     tekst = document.getElementById("maal").value
     if (tekst != "") {
         localStorage.setItem(`${tekst}`,`${tekst}`)
-        gjoremaal = localStorage.getItem(`${tekst}`)
-        for (let i = 0; i < localStorage.length; i++) {
-            history.push(localStorage.key(i))
+        let i = 0
+        while (i < localStorage.length) {
+            history.push(`⏺ ${localStorage.key(i)}`)
+            i++
         }
         function separate(history, separator) {
             let text = history.join(separator)
@@ -20,14 +19,15 @@ function leggtil() {
         separate(history, separator)
         console.log(localStorage)
         console.log(history)
-        
     }
     document.getElementById("maal").value = ""
 }
 
 function lastInn() {
-    for (let i = 0; i < localStorage.length; i++) {
-        history.push(localStorage.key(i))
+    let i = 0
+    while (i < localStorage.length) {
+        history.push(`⏺ ${localStorage.key(i)}`)
+        i++
     }
     function separate(history, separator) {
         let text = history.join(separator)
