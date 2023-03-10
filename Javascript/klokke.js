@@ -8,9 +8,8 @@ function startTime() {
     document.getElementById("klokke").innerHTML = h + ":" + m + ":" + s
     setTimeout(startTime, 1000)
   }
-  
-  //funksjon hvor 
+
   function checkTime(i) {
-    if (i < 10) {i = "0" + i}  // Legger inn null når kl. er mindre < 10
+    if (i < 10) {i = "0" + i}
     return i
   }
