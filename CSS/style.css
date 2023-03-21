@@ -64,7 +64,7 @@ body {
     box-shadow: 0px 4px 8px 12px rgba(0, 0, 0, 0.42);
     transform: rotate(150.2deg);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .home_button {
@@ -460,30 +460,31 @@ img {
 
 .avsnitt_høyre {
     display: flex;
-    justify-content: space-between;
-    margin-top: 15rem;
+    justify-content: space-around;
+    margin-top: 10rem;
 }
 
 .overogstrek {
-    justify-content: flex-end;
+    
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
 }
 
 .avsnitt_høyre_overskrift {
     display: flex;
-    padding-right: 0rem;
-    padding-top: 0rem;
-    margin-left: 3rem;
     font-size: 56px;
     width: fit-content;
 }
 
 .avsnitt_høyre_bilde {
-    margin-left: 12rem;
     transition:  all 0.3s ease 0s;
 }
 
 .strek1 {
-    position: absolute;
+    display: flex;
     z-index: -1;
     width: 352px;
     height: 0px;
@@ -492,12 +493,12 @@ img {
 }
 
 .polygon_1 {
-    position: absolute;
+    position: relative;
     width: 275px;
     height: 132px;
-    left: 36rem;
-    
-
+    top: 4rem;
+    left: 23rem;
+    z-index: 1;
     background: #D2D7DF;
     opacity: 0.6;
     transform: rotate(-155deg);
@@ -512,73 +513,10 @@ img {
     text-align: center;
 }
 
-#tekst1 {
-    margin-right: 14.5rem;
-}
 
-#over1 {
-    margin-left: 5.5rem;
-    
-}
-
-#over3 {
-    margin-left: 4.1rem;
-    margin-top: 6rem;
-}
-
-#overannet{
-    margin-left: 6rem;
-    margin-top: 6rem;
-}
-
-#tekst3 {
-    margin-right: 15rem;
-}
-
-#strek_1 {
-    top: 34rem;
-}
-
-#poly_1 {
-    top: 21.7rem;
-}
-
-#strek_3 {
-    position: absolute;
-    top: 118.5rem;
-}
-
-#poly_3 {
-    position: absolute;
-    top: 103.5rem;
-}
 
 @media only screen and (max-width: 600px) {
     
-    .avsnitt_høyre_tekst {
-        justify-content: center;
-        margin-left: 25rem;
-    }
-
-    #tekst1 {
-        margin-right: 0rem;
-    }
-
-    #bilde1 {
-        order: 2;
-    }
-
-    #bilde3 {
-        order: 2;
-    }
-
-    #overogstrek1 {
-        order: 1;
-    }
-    
-    #tekst3 {
-        margin-right: 0rem;
-    }
 }
 
 
@@ -596,7 +534,7 @@ img {
 .avsnitt_venstre {
     display: flex;
     margin-top: 15rem;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .avsnitt_venstre_overskrift {
@@ -607,65 +545,30 @@ img {
     width: fit-content;
 }
 
-
 .avsnitt_venstre_bilde {
-    margin-right: 12rem;
     transition: all 0.3s ease 0s;
 }
 
 .strek2 {
-    position: absolute;
     width: 352px;
     height: 0px;
-    left: 14.5rem;
-    top: 75rem;
     z-index: -1;
     border: 1px solid #000000;
 }
 
 .polygon_2 {
-    position: absolute;
+    position: relative;
+    display: none;
+    visibility: visible;
+    z-index: 1;
+    display: flex;
     width: 275px;
     height: 132px;
-    left: 51rem;
-    
-
+    top: 4rem;
+    left: -2.5rem;
     background: #D2D7DF;
     opacity: 0.6;
     transform: rotate(155deg);
-}
-
-#over2 {
-    margin-left: 17rem;
-}
-
-#overbilder {
-    margin-left: 20.5rem;
-}
-
-#tekst2 {
-    margin-left: 14.5rem;
-}
-
-#poly_2 {
-    top: 62.7rem; 
-}
-
-#poly_annet {
-    top: 103.5rem;
-}
-
-#strek4 {
-    top: 34rem;
-}
-
-/* responsive dritt */
-
-@media only screen and (max-width: 600px) {
-
-    #tekst2 {
-        margin-left: 0rem;
-    }
 }
 
 
@@ -676,21 +579,32 @@ img {
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 0px solid transparent;
-    border-right: 800px solid transparent;
-    border-top: 0;
-    border-bottom: 3000px solid #005283;
-    left: -13rem;
-    margin-top: -71rem;
+    border-left: 3000px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 0px;
+    border-bottom: 800px solid #005283;
     z-index: -1;
+}
+
+.eks {
+    position: relative;
+    height: 0;
+    width: 0;
+}
+
+.ekstraDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     
-    transform: rotate(-90deg);
 }
 
 .bottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .bilder_venstre {
@@ -698,7 +612,7 @@ img {
     flex-direction: column;
     margin-left: 1.5rem;
     margin-top: 31.7rem;
-    width: fit-content;
+    margin-bottom: 0rem;
 }
 
 .vs_og_ps {
@@ -737,23 +651,6 @@ img {
     margin-top: 21.5rem;
     margin-right: 1.5rem;
     text-align: end;
-}
-
-@media only screen and (max-width: 600px) {
-    .bottom_blue {
-        left: -65rem;
-        
-    }
-    
-    .avsnitt_venstre {
-        flex-direction: column;
-    }
-
-    .avsnitt_høyre {
-        flex-direction: column;
-    }
-
-    
 }
 
 
