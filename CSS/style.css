@@ -7,7 +7,7 @@ body {
 
 
 
-/* Overskriften på nettsiden */
+/* Alt som har med overskriften på nettsiden å gjøre. */
 
 .Overskrift_hovedside {
     display: flex;
@@ -56,7 +56,7 @@ body {
 
 
 
-/* Utseendet på hjem-hjørnet */
+/* Alt som har med utseendet på hjem-hjørnet å gjøre. */
 
 .home_corner {
     display: flex;
@@ -281,7 +281,7 @@ body.preload *{
 
 
 
-/* Javascript siden */
+/* Her er absolutt alt som har å gjøre med javascript siden. */
 
 .header_klokke {
     display: flex;
@@ -522,7 +522,7 @@ img {
 
 
 
-/* Hover for alle tre bildene */
+/* Hover for alle bildene som er linker. */
 
 .avsnitt_høyre_bilde:hover, .avsnitt_venstre_bilde:hover {
     opacity: 0.7;
@@ -530,7 +530,7 @@ img {
 
 
 
-/* Hvordan tekst på venstre skal se ut  */
+/* Hvordan tekst på venstre skal se ut. */
 
 .avsnitt_venstre {
     display: flex;
@@ -575,7 +575,7 @@ img {
 
 
 
-/* Bottom */
+/* Her er alt som har med footeren å gjøre. */
 
 .bottom_blue {
     position: absolute;
@@ -656,7 +656,7 @@ img {
 
 
 
-/* Info på de sidene der jeg ikke har noe enda */
+/* Info på de sidene der jeg ikke har noe enda (Bare delvis i bruk) */
 
 .info {
     display: flex;
@@ -668,7 +668,7 @@ img {
 
 
 
-/* Her er koden for Om Meg siden */
+/* Her er css for Om Meg siden */
 
 .meg_info {
     display: flex;
@@ -726,7 +726,7 @@ img {
 
 
 
-/* her er koden for Om IM siden */
+/* Her er css for Om IM siden */
 
 .om_im {
     display: flex;
@@ -767,7 +767,7 @@ img {
 
 
 
-/* Her er koden for Om Skolen siden */
+/* Her er css for Om Skolen siden */
 
 .om_skolen {
     display: flex;
@@ -777,6 +777,7 @@ img {
     height: 1000px;
     margin-top: 2rem;
     margin-bottom: 6rem;
+    justify-content: space-between;
 }
 
 #omskole1 {
@@ -789,11 +790,12 @@ img {
     margin: 2rem;
     margin-top: 7rem;
     margin-left: 15rem;
+    margin-right: 8rem;
 }
 
 
 
-/* youtube video på video innlevering */
+/* Dette er for styling av youtube video på video innleverings siden. */
 
 .youtube_video {
     margin-left: 20rem;
@@ -813,9 +815,23 @@ img {
     border-radius: 12.3px;
 }
 
-/* Når størrelsen større enn (1890px wide) */
+
+
+/*
+Herfra og nedover så er det bare kode for responsive skjermstørrelse.
+Viktig at de forskjellige tingene er under sin respektive css for at den ikke skal overskrive eller ignorere noe.
+*/
+
+
+
+
+/* 
+Når skjermstørrelsen større enn (1890px wide) 
+Alt dette har å gjøre med footeren når skjermen blir over en viss størrelse. Dette er for å sikre at det ser ok ut med 4k skjerm.
+*/
 
 @media only screen and (min-width: 1890px) {
+
     .bilder_venstre {
         flex-direction: row;
         margin-top: 41rem;
@@ -836,9 +852,13 @@ img {
 }
 
 
-/* Når størrelse mindre enn (950px wide) */
+/* 
+Når størrelsen er mindre enn (950px wide) 
+Alt dette har å gjøre med prosjekter siden inne på javascript programmering. 
+*/
 
 @media only screen and (max-width: 1015px) {
+
     .prosjekter {
         flex-direction: column;
         width: 100%;
@@ -875,12 +895,48 @@ img {
     }
 }
 
-/* Når størrelse mindre enn liten laptop (950px wide) */
+
+
+/* 
+Når størrelse er mindre enn liten laptop (950px wide) 
+Dette er ganske mye forskjellig ettersom at det er ved dette punktet det meste begynner å kollidere med hverandre.
+*/
 
 @media only screen and (max-width: 950px) {
+    
+
+    /* Alt som har å gjøre med hoveroverskriften. Dette er viktig for at proporsjonene er riktige */
+
+    .overskrift {
+        display: flex;
+        margin: 0;
+        font-size: 35px;
+        justify-content: center;
+        align-items: center;
+    }
     .avsnitt_høyre {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .strek {
+        position: absolute;
+        width: 30rem;
+        right: 2rem;
+        top: 7rem;
+    }
+    
+    .strekAnchor {
+        position: relative;
+        width: 0;
+        height: 0;
+    }
+
+    /* Alt som har med linkene å gjøre (De som er annenhver høyrestilt og venstrestilt) */
+    
+    .avsnitt_venstre {
         flex-direction: column;
         align-items: center;
         margin: 0;
@@ -896,12 +952,18 @@ img {
         justify-content: center;
         align-items: center;
     }
-
-    .avsnitt_venstre {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
+    
+    .polygon_1, .polygon_2 {
+        display: none;
     }
+
+    .avsnitt_høyre_bilde, .avsnitt_venstre_bilde {
+        max-width: 25rem;
+        margin: 0rem;
+    }
+
+
+    /* Alt som har å gjøre med footer og hvordan den scaler seg med skjermstørrelse */
 
     .bottom_blue {
         display: none;
@@ -931,35 +993,7 @@ img {
         margin: 0;
     }
 
-    .overskrift {
-        display: flex;
-        margin: 0;
-        font-size: 35px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .strek {
-        position: absolute;
-        width: 30rem;
-        right: 2rem;
-        top: 7rem;
-    }
-
-    .strekAnchor {
-        position: relative;
-        width: 0;
-        height: 0;
-    }
-
-    .polygon_1, .polygon_2 {
-        display: none;
-    }
-
-    .avsnitt_høyre_bilde, .avsnitt_venstre_bilde {
-        max-width: 25rem;
-        margin: 0rem;
-    }
+    /* Her er bare for å fikse det at bildecollagen på bildesiden blir borte og displayer en varsel om at du må være på pc for å se den. */
 
     .bildecol {
         display: none;
@@ -971,10 +1005,21 @@ img {
     
 }
 
+/* 
+Dette er for at ting skal begynne å passe til mobilstørrelse.
+Mobilstørrelse begynner som regel fra 425px.
+*/
+
 @media only screen and (max-width: 425px) {
+
+    /* Jeg valgte å fjerne hjemknappen i hjørnet for mobilstørrelse for å ha mer plass til å kunne se hva som er på skjermen. 
+    Det er ikke et problem ettersom at alle sidene på nettsiden har en link som du kan finne utenom hjemknappen i hjørnet. */
+
     .home_corner {
         display: none;
     }
+
+    /* Har også midtstilt overskriften og alt i headeren bare for at det skal se symmetrisk ut. */
 
     .Overskrift_hovedside {
         display: flex;
@@ -992,7 +1037,10 @@ img {
     }
 }
 
+/* Dette sikrer at den minste mobilstørrelsen har en bra layout og at ting ikke ser rart ut. */
+
 @media only screen and (max-width: 320px) {
+
     .Overskrift_hovedside {
         display: flex;
         justify-content: center;
@@ -1007,6 +1055,9 @@ img {
         width: 20rem;
         margin: 0;
     }
+    
+    /* Her har jeg bare endret litt på størrelsen på bildene og strekene for at det skal se symmetrisk ut 
+    og for at det skal se litt finere ut. */
 
     .strek1, .strek2 {
         width: 10rem;
