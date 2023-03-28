@@ -797,9 +797,60 @@ img {
 
 .youtube_video {
     margin-left: 20rem;
+    margin: 0;
 }
 
+.video_box {
+    display: flex;
+    justify-content: center;
+}
 
+.info1 {
+    display: none;
+    margin: 5rem;
+    padding: 1rem;
+    background-color: bisque;
+    border-radius: 12.3px;
+}
+
+/* Når størrelse mindre enn (950px wide) */
+
+@media only screen and (max-width: 1015px) {
+    .prosjekter {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .vinn_box {
+        display: flex;
+        justify-content: center;
+        height: 0;
+        width: auto;
+    }
+
+    .vinn {
+        position: relative;
+        margin: 0;
+        width: auto;
+    }
+
+    #vinn {
+        position: absolute;
+        top: 35rem;
+    }
+    .kalkulator {
+        width: auto;
+    }
+
+    .trePåRad_spill {
+        width: auto;
+        margin-top: 5rem;
+    }
+
+    .gjoremaal {
+        margin-top: 5rem;
+    }
+}
 
 /* Når størrelse mindre enn liten laptop (950px wide) */
 
@@ -886,6 +937,15 @@ img {
         max-width: 25rem;
         margin: 0rem;
     }
+
+    .bildecol {
+        display: none;
+    }
+
+    .info1 {
+        display: flex;
+    }
+    
 }
 
 @media only screen and (max-width: 425px) {
