@@ -2,6 +2,7 @@
 
 body {
     background-color: #D2D7DF;
+    margin: 0;
 }
 
 
@@ -44,8 +45,13 @@ body {
     width: 1000px;
     height: 0px;
     margin-right: 1rem;
-    top: 129px;
+    top: 7rem;
+    right: 2rem;
     border: 1px solid #000000;
+}
+
+.strekAnchor {
+    position: relative;
 }
 
 
@@ -515,11 +521,6 @@ img {
 
 
 
-@media only screen and (max-width: 600px) {
-    
-}
-
-
 
 /* Hover for alle tre bildene */
 
@@ -573,6 +574,7 @@ img {
 
 
 
+
 /* Bottom */
 
 .bottom_blue {
@@ -597,7 +599,6 @@ img {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    
 }
 
 .bottom {
@@ -796,4 +797,139 @@ img {
 
 .youtube_video {
     margin-left: 20rem;
+}
+
+
+
+/* Når størrelse mindre enn liten laptop (950px wide) */
+
+@media only screen and (max-width: 950px) {
+    .avsnitt_høyre {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .overogstrek {
+        margin-top: 3rem;
+    }
+
+    .bildeogfirkant2 {
+        display: flex;
+        order: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avsnitt_venstre {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .bottom_blue {
+        display: none;
+    }
+    
+    .bottom {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 7rem;
+        padding-top: 5rem;
+        background-color:#005283;
+        width: 100%;
+    }
+    
+    .ekstraDiv {
+        flex-direction: column;
+    }
+    
+    .bilder_venstre {
+        order: 2;
+        margin: 0;
+    }
+
+    .tekst_høyre_bottom {
+        margin: 0;
+    }
+
+    .overskrift {
+        display: flex;
+        margin: 0;
+        font-size: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .strek {
+        position: absolute;
+        width: 30rem;
+        right: 2rem;
+        top: 7rem;
+    }
+
+    .strekAnchor {
+        position: relative;
+        width: 0;
+        height: 0;
+    }
+
+    .polygon_1, .polygon_2 {
+        display: none;
+    }
+
+    .avsnitt_høyre_bilde, .avsnitt_venstre_bilde {
+        max-width: 25rem;
+        margin: 0rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .home_corner {
+        display: none;
+    }
+
+    .Overskrift_hovedside {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Overskrift {
+        margin: 0;
+    }
+
+    .strek {
+        right: 0rem;
+        width: 22rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .Overskrift_hovedside {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Overskrift {
+        margin: 0;
+    }
+
+    .strek {
+        right: 0rem;
+        width: 20rem;
+        margin: 0;
+    }
+
+    .strek1, .strek2 {
+        width: 10rem;
+    }
+
+    .avsnitt_høyre_bilde, .avsnitt_venstre_bilde {
+        width: 20rem;
+    }
 }
