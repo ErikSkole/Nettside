@@ -813,6 +813,29 @@ img {
     border-radius: 12.3px;
 }
 
+/* Når størrelsen større enn (1890px wide) */
+
+@media only screen and (min-width: 1890px) {
+    .bilder_venstre {
+        flex-direction: row;
+        margin-top: 41rem;
+        margin-right: 5rem;
+        padding: 0;
+    }
+    .vs_og_ps {
+        padding: 0;
+        padding-right: 1rem;
+    }
+    .figma_og_hcj {
+        padding: 0;
+    }
+    .ekstraDiv {
+        justify-content: end;
+    }
+
+}
+
+
 /* Når størrelse mindre enn (950px wide) */
 
 @media only screen and (max-width: 1015px) {
