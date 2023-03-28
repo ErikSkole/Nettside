@@ -72,7 +72,7 @@ function checkWin() {
         hvemVant = 2
         winCondition()
     }
-    if (runder == 9) {
+    else if (runder == 9) {
         console.log("Ingen vinner!")
         hvemVant = 3
         winCondition()
